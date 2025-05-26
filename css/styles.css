@@ -1,3 +1,9 @@
 .hero-container {
   background-image: url(/assets/bg/background-top.svg);
 }
+
+/* Tablet and Mobile Styles */
+@media (width <= 1023px) {
+}
+
+/* Mobile Only Styles */
