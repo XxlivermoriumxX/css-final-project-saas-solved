@@ -6,9 +6,39 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   min-width: 360px;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+button {
+  background-color: #2476ff;
+  color: white;
+  border-radius: 30px;
+  border: 0;
+  text-align: center;
+}
+
+button:hover {
+  background-color: white;
+  color: #2476ff;
+  border: 2px solid #2476ff;
+}
+
+a {
+  color: #677788;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2476ff;
 }
 
 /* Header */
@@ -19,9 +49,10 @@ body {
   width: 100%;
   height: 86px;
   padding: 10px 30px;
+  background-color: #f6f8fa;
 }
 
-.logo-container {
+.front-logo-container {
   height: 47px;
   width: 155px;
 }
@@ -40,43 +71,169 @@ body {
 .header-navigation ul {
   display: flex;
   list-style-type: none;
-
   gap: 20px;
 }
 
 .header-navigation ul li a {
-  color: #677788;
-  text-decoration: none;
-}
-
-.header-navigation ul li a:hover {
-  color: #2476ff;
+  font-size: 14px;
 }
 
 .buy-button {
   width: 102px;
   height: 45px;
-  text-align: center;
-  background-color: #2476ff;
-  color: white;
-  border-radius: 30px;
-  border: 0;
 }
 
-.buy-button:hover {
-  background-color: white;
-  color: #2476ff;
-  border: 2px solid #2476ff;
-}
-
+/* Hero */
 .hero-container {
+  display: flex;
+  padding: 40px 30px 0;
   background-image: url(/assets/bg/background-top.svg);
+  height: 446px;
+  width: 100%;
+}
+
+.hero-info,
+.hero-logos {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-info {
+  padding-bottom: 60px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-info .title {
+  gap: 11px;
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+}
+
+p.subtitle {
+  color: #677788;
+  font-size: 14px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.video-button {
+  width: 137px;
+  height: 48px;
+}
+
+.hero-actions a {
+  font-size: 14px;
+}
+
+.hero-logos {
+  position: relative;
+}
+
+.hero-logos .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+#google-logo,
+#ads-logo {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+
+#google-logo > img,
+#ads-logo > img {
+  width: 40px;
+  height: 40px;
+}
+
+#asana-logo,
+#calendar-logo,
+#weave-logo,
+#paypal-logo,
+#atlassian-logo {
+  height: 80px;
+  width: 80px;
+  padding: 16px;
+}
+
+#asana-logo > img,
+#calendar-logo > img,
+#weave-logo > img,
+#paypal-logo > img,
+#atlassian-logo > img {
+  width: 48px;
+  height: 48px;
+}
+
+#google-logo {
+  top: 10px;
+  left: 64px;
+}
+
+#atlassian-logo {
+  top: 10px;
+  left: 175px;
+}
+
+#asana-logo {
+  top: 10px;
+  left: 380px;
+}
+
+#paypal-logo {
+  top: 172px;
+  left: 44px;
+}
+
+#weave-logo {
+  top: 172px;
+  left: 262px;
+}
+
+#ads-logo {
+  top: 290px;
+  left: 155px;
+}
+
+#calendar-logo {
+  top: 310px;
+  left: 364px;
 }
 
 /* Tablet and Mobile Styles */
 @media (width <= 1023px) {
   .menu-button {
     display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 6px 14px;
+    background-color: white;
+    border: 0;
+    color: #677788;
+  }
+  .menu-button:hover {
+    border: 0;
+  }
+
+  .header-navigation ul {
+    display: none;
+  }
+
+  .buy-button {
+    display: none;
   }
 }
 
