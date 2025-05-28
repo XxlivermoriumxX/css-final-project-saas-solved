@@ -199,16 +199,22 @@
     <section>
       <div class="hire-container">
         <div class="hire-info">
-          <h2>Hire Us</h2>
-          <p class="subtitle">Whatever your goal - we will get you there</p>
-          <hr />
+          <div class="hire-title">
+            <div class="title">
+              <h2>Hire Us</h2>
+              <p class="subtitle">Whatever your goal - we will get you there</p>
+            </div>
+            <hr />
+          </div>
           <p class="review">
             "I love front! I love the ease of use, I love the fact that I have
-            total creative freesom..."
+            total creative freedom..."
           </p>
           <div class="reviewer">
-            <p class="name">Charlotte Moore</p>
-            <p class="credentials">Head of Commercials, Slack</p>
+            <div class="reviewer-title">
+              <p class="name">Charlotte Moore</p>
+              <p class="credentials">Head of Commercials, Slack</p>
+            </div>
             <div class="img-container">
               <img src="/assets/images/man_one.jpg" alt="Reviewer picture" />
             </div>
@@ -216,53 +222,60 @@
         </div>
         <div class="contact-form">
           <form>
-            <p>Fill out the form and we'll be in touch as soon as possible</p>
-            <div class="name-boxes">
-              <input
-                type="text"
-                name="first-name"
-                placeholder="First Name"
+            <div class="form-fillers">
+              <p class="form-instructions">
+                Fill out the form and we'll be in touch as soon as possible
+              </p>
+              <div class="name-boxes">
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div class="email-input">
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="dropdowns">
+                <select name="budget" required>
+                  <option value="" disabled selected>Budget</option>
+                  <option value="under-10k">Under $10,000</option>
+                  <option value="10-20k">$10,000 - $20,000</option>
+                  <option value="20-30k">$20,000 - $30,000</option>
+                  <option value="over-30k">Over $30,000</option>
+                </select>
+                <select name="country" required>
+                  <option value="" disabled selected>Country</option>
+                  <option value="usa">United States</option>
+                  <option value="canada">Canada</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <textarea
+                name="message"
+                placeholder="Tell us more about your project, needs, and timeline, please..."
                 required
-              />
-              <input
-                type="text"
-                name="last-name"
-                placeholder="Last Name"
-                required
-              />
+              ></textarea>
+              <div class="marketing-option">
+                <input type="checkbox" id="marketing" name="marketing" />
+                <label for="marketing"
+                  >Yes, I'd like to receive occasional marketing emails from
+                  Front. I have the right to opt out at any time.</label
+                >
+              </div>
+              <div class="privacy-policy-links">
+                <a href="#">View privacy policy</a>
+              </div>
             </div>
-            <input type="email" name="email" placeholder="Email" required />
-            <div class="dropdowns">
-              <select name="budget" required>
-                <option value="" disabled selected>Budget</option>
-                <option value="under-10k">Under $10,000</option>
-                <option value="10-20k">$10,000 - $20,000</option>
-                <option value="20-30k">$20,000 - $30,000</option>
-                <option value="over-30k">Over $30,000</option>
-              </select>
-              <select name="country" required></select>
-              <option value="" disabled selected>Country</option>
-              <option value="usa">United States</option>
-              <option value="canada">Canada</option>
-              <option value="uk">United Kingdom</option>
-              <option value="other">Other</option>
-            </div>
-            <textarea
-              name="message"
-              placeholder="Tell us more about your project, needs, and timeline, please..."
-              required
-            ></textarea>
-            <div class="marketing-option">
-              <input type="checkbox" id="marketing" name="marketing" />
-              <label for="marketing"
-                >Yes, I'd like to receive occasional marketing emails from
-                Front. I have the right to opt out at any time.</label
-              >
-            </div>
-            <div class="privacy-policy-links">
-              <a href="#" id="plain">View privacy policy</a>
-              <a href="#" id="blue">View privacy policy</a>
-            </div>
+
             <button type="submit">Submit Form</button>
           </form>
         </div>
@@ -284,49 +297,51 @@
             ><a href="tel:+10621099222">+1 (062) 109-9222</a>
           </div>
         </div>
-        <div class="company-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li>
-              <a href="#">Career <span>We're Hiring</span></a>
-            </li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Hire Us</a></li>
-          </ul>
-        </div>
-        <div class="features-column">
-          <h3>Features</h3>
-          <ul>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Release Notes</a></li>
-            <li><a href="#">Integrations</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </div>
-        <div class="documentation-column">
-          <h3>Documentation</h3>
-          <ul>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">API Reference</a></li>
-            <li><a href="#">Tech Requirements</a></li>
-          </ul>
-        </div>
-        <div class="resources-column">
-          <h3>Resources</h3>
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-circle-user"></i>Your Account</a
-              >
-            </li>
-          </ul>
+        <div class="footer-links">
+          <div class="company-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li>
+                <a href="#">Career <span>We're Hiring</span></a>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Hire Us</a></li>
+            </ul>
+          </div>
+          <div class="features-column">
+            <h3>Features</h3>
+            <ul>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Release Notes</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="documentation-column">
+            <h3>Documentation</h3>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Tech Requirements</a></li>
+            </ul>
+          </div>
+          <div class="resources-column">
+            <h3>Resources</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-circle-user"></i>Your Account</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
