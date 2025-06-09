@@ -512,33 +512,81 @@ p.subtitle {
   gap: 20px;
 }
 
-.name-boxes,
-.email-input,
-.dropdowns {
-  gap: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border-width: 1px;
-}
-
 /* Footer */
 
 .footer-container {
   display: flex;
-  width: 100%;
-  height: 246px;
   padding: 40px 30px;
-  justify-content: space-evenly;
+  gap: 40px;
 }
 
-.contact-info > .logo-container {
-  width: 100px;
-  height: 30px;
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.contact-group > .logo-container {
+  width: 40%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-address,
+.contact-phone {
+  display: flex;
+  gap: 9px;
+  color: #677788;
+  width: 100%;
+}
+
+.contact-address:hover,
+.contact-phone:hover {
+  color: #2576ff;
 }
 
 .footer-links {
   display: flex;
+  flex-direction: row;
+  width: 100%;
   gap: 49px;
+  justify-content: space-around;
+}
+
+.company-column,
+.features-column,
+.links-container,
+.documentation-column,
+.resources-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links-container span {
+  background-color: #2576ff;
+  color: white;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  font-weight: 510;
+  padding: 2px 4px;
+  margin-left: 10px;
+}
+
+.links-container ul {
+  list-style-type: none;
+}
+
+.links-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Tablet and Mobile Styles */
