@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -222,10 +223,10 @@
         </div>
         <div class="contact-form">
           <form>
+            <p class="form-instructions">
+              Fill out the form and we'll be in touch as soon as possible
+            </p>
             <div class="form-fillers">
-              <p class="form-instructions">
-                Fill out the form and we'll be in touch as soon as possible
-              </p>
               <div class="name-boxes">
                 <input
                   type="text"
@@ -271,12 +272,13 @@
                   Front. I have the right to opt out at any time.</label
                 >
               </div>
-              <div class="privacy-policy-links">
+              <div class="privacy-policy-link">
                 <a href="#">View privacy policy</a>
               </div>
             </div>
-
-            <button type="submit">Submit Form</button>
+            <div class="submit-button">
+              <button type="submit">Submit Form</button>
+            </div>
           </form>
         </div>
       </div>
@@ -289,8 +291,8 @@
           </div>
           <div class="contact-info">
             <div class="contact-address">
-              <i class="fa-solid fa-location-arrow"></i>153 Williamson Plaza,
-              Magggieberg
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>153 Williamson Plaza, Magggieberg</span>
             </div>
             <div class="contact-phone">
               <i class="fa-solid fa-phone"></i

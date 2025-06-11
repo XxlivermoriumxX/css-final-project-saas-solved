@@ -1,0 +1,37 @@
+/* Tablet and Mobile Styles */
+@media (width <= 1023px) {
+  .menu-button {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 6px 14px;
+    background-color: white;
+    border: 0;
+    color: #677788;
+  }
+  .menu-button:hover {
+    border: 0;
+  }
+
+  .header-navigation ul {
+    display: none;
+  }
+
+  .buy-button {
+    display: none;
+  }
+
+  #google-logo,
+  #ads-logo,
+  #asana-logo,
+  #calendar-logo,
+  #weave-logo,
+  #paypal-logo,
+  #atlassian-logo {
+    animation: none;
+  }
+}
+
+/* Mobile Only Styles */
+@media (width <= 767) {
+}
