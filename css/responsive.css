@@ -1,16 +1,18 @@
 /* Tablet and Mobile Styles */
 @media (width <= 1023px) {
+  /* Header */
   .menu-button {
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
-    padding: 6px 14px;
-    background-color: white;
+    padding: 0.375rem 0.875rem;
+    background-color: transparent;
     border: 0;
     color: #677788;
   }
   .menu-button:hover {
     border: 0;
+    background-color: transparent;
   }
 
   .header-navigation ul {
@@ -21,6 +23,7 @@
     display: none;
   }
 
+  /* Hero */
   #google-logo,
   #ads-logo,
   #asana-logo,
@@ -30,8 +33,137 @@
   #atlassian-logo {
     animation: none;
   }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 664px;
+    gap: 10px;
+  }
+
+  .hero-info,
+  .hero-logos {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero-info {
+    height: 305px;
+    padding-bottom: 60px;
+  }
+
+  .hero-info .title {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Why Front */
+  .bullet-point > .left-wing,
+  .bullet-point > .right-wing {
+    height: 1px;
+    width: 35%;
+    background-color: #e6e9f2;
+  }
+
+  .bullet-container {
+    align-self: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Pricing */
+  .pricing-info {
+    flex-direction: column;
+  }
+
+  .plan-price {
+    border: #e2e2e2;
+  }
+
+  .plan-price,
+  .plan-features {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  /* Hire Us */
+  .hire-container {
+    flex-direction: column;
+  }
+
+  .hire-info {
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 60px;
+  }
+
+  .hire-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .hire-title {
+    width: 50%;
+  }
+
+  .hire-info .reviewer {
+    padding: 0;
+  }
+
+  /* Footer */
+  .contact-group {
+    width: 38%;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    width: 50%;
+  }
 }
 
 /* Mobile Only Styles */
 @media (width <= 767) {
+  /* Why Front */
+  .why-container > .bullets-list {
+    flex-direction: column;
+  }
+
+  .bullet-point > .left-wing,
+  .bullet-point > .right-wing {
+    height: 0;
+    width: 0;
+  }
+
+  .bullet-point {
+    flex-direction: row;
+  }
+
+  .plan-features {
+    display: column;
+  }
+
+  .plan-feature {
+    width: 100%;
+  }
+
+  .hire-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
