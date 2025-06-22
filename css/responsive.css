@@ -47,6 +47,7 @@
     padding: 0;
   }
 
+  /* Left/Top Part */
   .hero-info {
     height: 305px;
     padding-bottom: 60px;
@@ -56,6 +57,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .hero-actions {
@@ -134,22 +136,54 @@
 }
 
 /* Mobile Only Styles */
-@media (width <= 767) {
+@media (width <= 767px) {
+  .body {
+    min-width: 360px;
+  }
+
+  /* Logos */
+  #asana-logo {
+    top: 0;
+  }
+
+  #google-logo {
+    left: 2%;
+  }
+
+  #paypal-logo {
+    left: 7%;
+  }
+
+  #weave-logo {
+    top: 35%;
+    left: 58%;
+  }
+
   /* Why Front */
   .why-container > .bullets-list {
     flex-direction: column;
+    gap: 17px;
   }
 
   .bullet-point > .left-wing,
   .bullet-point > .right-wing {
-    height: 0;
-    width: 0;
+    display: none;
+  }
+
+  .bullet-container {
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .bullet-point {
-    flex-direction: row;
+    width: 50px;
   }
 
+  .bullet-container span {
+    text-align: left;
+  }
+
+  /* Pricing/Plan */
   .plan-features {
     display: column;
   }
@@ -158,12 +192,28 @@
     width: 100%;
   }
 
+  /* Hire Container */
   .hire-info {
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container div {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-address,
+  .contact-phone {
+    display: flex;
+    justify-content: center;
   }
 }
